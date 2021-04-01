@@ -27,4 +27,59 @@ d3.select("#filter-btn").on("click", on_click)
 d3.select("#filter-btn").on("enter", on_click)
 make_table(tableData);
 
+// Multiple Search Categories
 
+function on_click() {
+    var input_date = d3.select("#datetime").property("value");
+    
+    var new_data = tableData;
+    var new_data = new_data.filter(table_row => table_row.datetime == input_date);
+    
+    make_table(new_data)
+    
+    };
+    d3.select("#filter-btn").on("click", on_click)
+    d3.select("#filter-btn").on("enter", on_click)
+    make_table(tableData);
+
+
+function on_click() {
+    var input_date = d3.select("#datetime").property("value");
+    
+    var new_data = tableData;
+    var new_data = new_data.filter(table_row => table_row.datetime == input_date);
+    
+    make_table(new_data)
+    
+    };
+    d3.select("#filter-btn").on("click", on_click)
+    d3.select("#filter-btn").on("enter", on_click)
+    make_table(tableData);
+
+
+function on_click() {
+    var input_date = d3.select("#datetime").property("value");
+    
+    var new_data = tableData;
+    var new_data = new_data.filter(table_row => table_row.datetime == input_date);
+    
+    make_table(new_data)
+    
+    };
+    d3.select("#filter-btn").on("click", on_click)
+    d3.select("#filter-btn").on("enter", on_click)
+    make_table(tableData);
+    
+function on_click() {
+    var input_date = d3.select("#datetime").property("value");
+    
+    var new_data = tableData;
+    var new_data = new_data.filter(table_row => table_row.datetime == input_date);
+    
+    make_table(new_data)
+    
+    };
+    d3.select("#filter-btn").on("click", on_click)
+    d3.select("#filter-btn").on("enter", on_click)
+    make_table(tableData);
+    
