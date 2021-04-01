@@ -14,7 +14,7 @@ function make_table(data) {
     }
     );
 };
-function on_click() {
+function date_click() {
 var input_date = d3.select("#datetime").property("value");
 
 var new_data = tableData;
@@ -29,11 +29,11 @@ make_table(tableData);
 
 // Multiple Search Categories
 
-function on_click() {
-    var input_date = d3.select("#datetime").property("value");
+function city_click() {
+    var input_city = d3.select("city").property("value");
     
     var new_data = tableData;
-    var new_data = new_data.filter(table_row => table_row.datetime == input_date);
+    var new_data = new_data.filter(table_row => table_row.city == input_city);
     
     make_table(new_data)
     
@@ -43,11 +43,11 @@ function on_click() {
     make_table(tableData);
 
 
-function on_click() {
-    var input_date = d3.select("#datetime").property("value");
+function state_click() {
+    var input_state = d3.select("#state").property("value");
     
     var new_data = tableData;
-    var new_data = new_data.filter(table_row => table_row.datetime == input_date);
+    var new_data = new_data.filter(table_row => table_row.state == input_state);
     
     make_table(new_data)
     
@@ -57,11 +57,11 @@ function on_click() {
     make_table(tableData);
 
 
-function on_click() {
-    var input_date = d3.select("#datetime").property("value");
+function country_click() {
+    var input_country = d3.select("#country").property("value");
     
     var new_data = tableData;
-    var new_data = new_data.filter(table_row => table_row.datetime == input_date);
+    var new_data = new_data.filter(table_row => table_row.country == input_country);
     
     make_table(new_data)
     
@@ -70,11 +70,11 @@ function on_click() {
     d3.select("#filter-btn").on("enter", on_click)
     make_table(tableData);
     
-function on_click() {
-    var input_date = d3.select("#datetime").property("value");
+function shape_click() {
+    var input_shape = d3.select("#shape").property("value");
     
     var new_data = tableData;
-    var new_data = new_data.filter(table_row => table_row.datetime == input_date);
+    var new_data = new_data.filter(table_row => table_row.shape == input_shape);
     
     make_table(new_data)
     
