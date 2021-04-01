@@ -15,7 +15,7 @@ function make_table(data) {
     );
 };
 function on_click() {
-var input_date = d3.selct("#datetime").property("value");
+var input_date = d3.select("#datetime").property("value");
 
 var new_data = tableData;
 var new_data = new_data.filter(table_row => table_row.datetime == input_date);
