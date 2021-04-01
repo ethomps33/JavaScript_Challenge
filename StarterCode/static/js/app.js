@@ -23,8 +23,8 @@ var new_data = new_data.filter(table_row => table_row.datetime == input_date);
 make_table(new_data)
 
 };
-d3.select("#filter-btn").on("click", on_click)
-d3.select("#filter-btn").on("enter", on_click)
+d3.select("#filter-btn").on("click", date_click)
+d3.select("#filter-btn").on("enter", date_click)
 make_table(tableData);
 
 // Multiple Search Categories
@@ -38,8 +38,8 @@ function city_click() {
     make_table(new_data)
     
     };
-    d3.select("#filter-btn").on("click", on_click)
-    d3.select("#filter-btn").on("enter", on_click)
+    d3.select("#filter-btn").on("click", city_click)
+    d3.select("#filter-btn").on("enter", city_click)
     make_table(tableData);
 
 
@@ -52,8 +52,8 @@ function state_click() {
     make_table(new_data)
     
     };
-    d3.select("#filter-btn").on("click", on_click)
-    d3.select("#filter-btn").on("enter", on_click)
+    d3.select("#filter-btn").on("click", state_click)
+    d3.select("#filter-btn").on("enter", state_click)
     make_table(tableData);
 
 
@@ -66,8 +66,8 @@ function country_click() {
     make_table(new_data)
     
     };
-    d3.select("#filter-btn").on("click", on_click)
-    d3.select("#filter-btn").on("enter", on_click)
+    d3.select("#filter-btn").on("click", country_click)
+    d3.select("#filter-btn").on("enter", country_click)
     make_table(tableData);
     
 function shape_click() {
@@ -79,7 +79,7 @@ function shape_click() {
     make_table(new_data)
     
     };
-    d3.select("#filter-btn").on("click", on_click)
-    d3.select("#filter-btn").on("enter", on_click)
+    d3.select("#filter-btn").on("click", shape_click)
+    d3.select("#filter-btn").on("enter", shape_click)
     make_table(tableData);
     
