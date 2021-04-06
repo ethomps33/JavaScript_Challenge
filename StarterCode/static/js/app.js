@@ -71,8 +71,8 @@ function shape_click() {
     make_table(new_data);
     d3.select("#shape").node().value = "";
     };
-// d3.select("#filter-btn").on("click", date_click);
-d3.select("#filter-btn").on("click", shape_click);
+d3.select("#filter-btn").on("click", date_click);
+// d3.select("#filter-btn").on("click", shape_click);
 // d3.select("#filter-btn").on("click", country_click);
 // d3.select("#filter-btn").on("click", state_click);
 // d3.select("#filter-btn").on("click", city_click);
